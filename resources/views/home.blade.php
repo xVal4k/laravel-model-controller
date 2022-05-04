@@ -14,9 +14,9 @@
     <main>
         <div class="container">
             @foreach ($movies as $movie)
-                <div class="card">
+            <div class="card">
+                <div class="card-info">
                     <h2>{{ $movie->title }}</h2>
-                    <hr>
                     <h3>{{ $movie->original_title }}</h3>
                     <div class="mini_info">
                         <p>Nationality: <strong>{{ $movie->nationality }}</strong></p>
@@ -24,6 +24,7 @@
                         <p>Average vote: <strong>{{ $movie->vote }} / 10</strong></p>
                     </div>
                 </div>
+              </div>
             @endforeach
         </div>
     </main>
